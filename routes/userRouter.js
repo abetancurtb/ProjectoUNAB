@@ -15,12 +15,12 @@ userRouter.get("/", (req, res) =>{
 })
 //Actualizar
 //PUT
-userRouter.put("/", (req, res) =>{
+userRouter.patch("/:nombre", (req, res) =>{
     updateUser(req, res)
 })
 //Eliminar
 //DELETE
-userRouter.delete("/", (req, res) =>{
+userRouter.delete("/:id", (req, res) =>{
     deleteUser(req, res)
 })
 

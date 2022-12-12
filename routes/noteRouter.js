@@ -15,12 +15,12 @@ noteRouter.get("/", (req, res) =>{
 })
 //Actualizar
 //PUT
-noteRouter.put("/", (req, res) =>{
+noteRouter.patch("/:nombre", (req, res)=>{
     updateNote(req, res)
 })
 //Eliminar
 //DELETE
-noteRouter.delete("/", (req, res) =>{
+noteRouter.delete("/:id", (req, res) =>{
     deleteNote(req, res)
 })
 

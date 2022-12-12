@@ -1,13 +1,74 @@
-export function createNote(req, res){
-    
-    res.sendStatus(200)
+import noteModel from  "../models/note.js"
+
+
+export async function createNote(req, res){
+    const note = req.body;
+
+    let documento
+
+    try {
+        documento = await noteModel.create(note)
+    } catch (error) {
+        res.status(400)
+        res.json(error.message)
+        return;
+    }
+
+    res.status(201)
+    res.json(documento)
 }
-export function readNote(req, res){
-    res.sendStatus(200)
+
+export async function readNote(req, res){
+    const { idUsuario } = req.body
+
+    let documento
+
+    try {
+        documento = await noteModel.findOne({ idUsuario })
+    } catch (error) {
+        res.status(400)
+        res.json(error.message)
+        return;
+    }
+
+    res.status(200)
+    res.json(documento)
 }
-export function updateNote(req, res){
-    res.sendStatus(200)
+
+export async function updateNote(req, res){
+    const { idUsuario } = req.params
+    const { cambios } = req.body
+
+    let documento;
+
+    try {
+        documento = await noteModel.updateOne({
+            idUsuario
+        }, cambios)
+    } catch (error) {
+        res.status(400)
+        res.json(error.message)
+        return;
+    }
+
+    res.status(200)
+    res.json(documento)
 }
-export function deleteNote(req, res){
-    res.sendStatus(200)
+export async function deleteNote(req, res){
+    const { id } = req.params
+
+    let documento;
+
+    try {
+        documento = await noteModel.findOneAndDelete({
+            "_id": id
+        })
+    } catch (error) {
+        res.status(400)
+        res.json(error.message)
+        return;
+    }
+
+    res.status(200)
+    res.json(documento)
 }
