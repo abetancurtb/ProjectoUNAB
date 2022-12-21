@@ -3,8 +3,9 @@ import { useCookies } from "react-cookie";
 import { Link, useNavigate } from "react-router-dom";
 import Logo from "../../assets/Logo";
 import Button from "../../components/forms/Button";
-import Input from "../../components/forms/Input";
+import Input from "../../components/forms/input";
 import UserContext from "../../contexts/UserContext";
+import TokenContext from "../../contexts/TokenContext";
 import { login } from "../../services/AuthService";
 
 import "./Login.css";
@@ -38,10 +39,10 @@ function Login() {
     <section className="login">
       <div className="container">
         <Link to="/">
-          <Logo showText={false} />
+          <Logo size="10%" showText={false} />
         </Link>
         <h1 className="title">
-          Iniciar Sesión en <b>Ullet</b>
+          Iniciar Sesión en <b>DO IT</b>
         </h1>
         <p>¡Que gusto verte nuevamente!</p>
         <form className="flex card form">
@@ -61,7 +62,7 @@ function Login() {
         </form>
         <div className="register card">
           <p>
-            ¿Nuevo en Ullet? <Link to="/register">Crear una cuenta</Link>
+            ¿Nuevo en DO IT ? <Link to="/register">Crear una cuenta</Link>
           </p>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Input(props) {
+function input(props) {
   const { children, type, onChange, placeholder } = props;
   return (
     <label className="input">
@@ -10,4 +10,4 @@ function Input(props) {
   );
 }
 
-export default Input;
+export default input;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/Logo";
 import Button from "../../components/forms/Button";
-import Input from "../../components/forms/Input";
+import Input from "../../components/forms/input";
 import { register } from "../../services/AuthService";
 
 import "./Register.css";
@@ -27,10 +27,10 @@ function Login() {
     <section className="login">
       <div className="container">
         <Link to="/">
-          <Logo showText={false} />
+          <Logo size="10%" showText={false} />
         </Link>
         <h1 className="title">
-          Registrarse en <b>Ullet</b>
+          Registrarse en <b>DO IT</b>
         </h1>
         <form className="flex card form">
           {/* <Input>Telefono</Input> */}

@@ -10,7 +10,6 @@ import Home from "./views/home/Home";
 import Login from "./views/login/Login";
 import UserPanel from "./views/panel/UserPanel.js";
 import Register from "./views/register/Register";
-import Test from "./views/test/Test";
 
 function App() {
   return (
@@ -56,8 +55,6 @@ function App() {
           </CookiesProvider>
         }
       />
-
-      <Route path="/test" element={<Test></Test>} />
     </Routes>
   );
 }
