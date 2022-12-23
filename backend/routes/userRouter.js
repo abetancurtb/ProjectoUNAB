@@ -6,11 +6,13 @@ const userRouter = express.Router()
 //Crear
 //POST
 userRouter.post("/", (req, res) =>{
+    console.log(req);
     createUser(req, res)
 })
 //Leer
 //GET
 userRouter.get("/", (req, res) =>{
+    console.log("ee");
     readUser(req, res)
 })
 //Actualizar

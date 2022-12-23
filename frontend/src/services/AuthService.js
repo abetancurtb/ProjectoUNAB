@@ -15,17 +15,19 @@ export async function login(user, password) {
   }
 }
 
-export async function register(user, password) {
+export async function register(user, password,emailInput) {
   const data = {
-    user: {
-      name: user,
-      password: password,
+    usuario: {
+      nombre: user,
+      contraseña : password,
+      email: emailInput
     },
   };
-  const res = await fetch("http://localhost:8080/api/user/", {
+  const res = await fetch("http://localhost:8080/user/", {
     method: "POST",
+    mode: 'cors',
     headers: {
-      "Content-Type": "application/json",
+      "Content-type": "application/json",
     },
     body: JSON.stringify(data),
   });
