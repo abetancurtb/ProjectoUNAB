@@ -8,7 +8,7 @@ import { UserProvider } from "./contexts/UserContext";
 import { CookiesProvider } from "react-cookie";
 import Home from "./views/home/Home";
 import Login from "./views/login/Login";
-import UserPanel from "./views/panel/UserPanel.js";
+import Note from "./views/note/Note";
 import Register from "./views/register/Register";
 
 function App() {
@@ -44,12 +44,12 @@ function App() {
         }
       />
       <Route
-        path="/panel"
+        path="/note"
         element={
           <CookiesProvider>
             <TokenProvider>
               <UserProvider>
-                <UserPanel />
+                <Note />
               </UserProvider>
             </TokenProvider>
           </CookiesProvider>

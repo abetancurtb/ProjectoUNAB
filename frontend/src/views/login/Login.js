@@ -31,7 +31,7 @@ function Login() {
       setCookie("token", token, "/");
       setUser({ name: userName });
       setCookie("userName", userName);
-      navigate("/panel");
+      navigate("/note");
     } else {
       alert("Credenciales Incorrectas");
     }
