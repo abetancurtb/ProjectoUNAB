@@ -1,14 +1,48 @@
 .navbar {
-    position: sticky;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  box-shadow: 10px 19px 19px rgba(51, 5, 137, 0.1);
+  background-color: rgb(0, 0, 0);
+  border-style: inset;
+  border-color: rgb(0, 0, 0);
 }
 
 .menu {
-    list-style: none;
-    align-items: center;
-    gap: 2rem;
+  list-style: none;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  gap: 3rem;
 }
 
 .menu li:last-child {
-    margin-left: auto;
+  margin-left: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+.br {
+  margin-top: 0.5rem;
+  margin-right: 0rem;
+}
+.br:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.bbr {
+  size: 12px;
+  margin-top: 0.5rem;
+  margin-left: -2rem;
+}
+.bbr:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.botondeinicio {
+  margin-top: 2rem;
+  margin-right: 4rem;
+  margin-left: -4rem;
+}
+.ellogo {
+  border-color: rgb(253, 253, 253);
+  color: rgb(253, 253, 253);
+  margin-left: -5px;
 }

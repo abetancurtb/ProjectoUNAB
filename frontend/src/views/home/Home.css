@@ -1,52 +1,95 @@
-.main-headline {
-  margin-top: 5rem;
-  font-weight: 700;
-  margin-left: -3rem;
-}
+.headline {
+  position: sticky;
+  font-size: 90px;
+  --text-color: rgb(255, 255, 255);
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 0rem;
 
+  border-color: rgb(197, 197, 197);
+}
 .main-headline .title {
+  position: sticky;
   font-size: 28px;
   color: var(--main-color);
 }
 
-.main-headline .content {
-  font-size: 48px;
-  color: var(--main-color);
+.content {
+  position: sticky;
+  font-size: 470px;
 }
 
 .supp-headline {
+  position: sticky;
+  font-size: 25px;
+  --text-color: rgb(255, 255, 255);
+  margin-left: 0.1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  margin-left: 3rem;
+  margin-right: 1.5rem;
+}
+.windowsStrore {
+  border-color: rgb(253, 253, 253);
+  position: sticky;
+  margin-left: 16rem;
+  margin-top: -5.5rem;
+  margin-right: 1.5rem;
+}
+.windowsStrore:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.macStrore {
+  border-color: rgb(253, 253, 253);
+  position: sticky;
+  margin-left: 5rem;
+  margin-top: 3rem;
+  margin-right: 1.5rem;
+}
+.macStrore:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-/* .main-headline,
-.supp-headline {
-    max-width: 25rem;
-} */
-
 .header img {
-  max-width: 100%;
+  position: sticky;
+  max-width: 102%;
 }
 
 .header .grid {
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1fr 1fr;
 }
 
-@media (max-width: 45em) {
+@media (max-width: 45rem) {
   .header .grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .header .illustration {
-    grid-row: 1;
+    grid-template-columns: 1fr 1fr;
   }
 }
-
 .header {
-  margin: 10% 0% 0% 35%;
+  position: sticky;
+  background-color: rgba(20, 12, 91, 0.976);
+  margin: 0% 0% 0% 0%;
 }
 
+.flex {
+  display: flex;
+}
+h1 {
+  position: sticky;
+  font-size: 70px;
+  --text-color: rgb(255, 255, 255);
+}
+.message {
+  margin-top: 0.5rem;
+  font-size: 13px;
+  --text-color: rgb(255, 255, 255);
+}
 .illustration {
-  width: 40% !important;
+  width: 93% !important;
+  position: sticky;
+  margin-bottom: 1rem;
+  margin-top: 0.8rem;
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+  overflow: hidden;
 }

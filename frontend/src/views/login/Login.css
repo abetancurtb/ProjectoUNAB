@@ -1,5 +1,6 @@
 .login {
   text-align: center;
+  margin: 0rem;
 }
 
 .login .logo {
@@ -9,7 +10,7 @@
 
 .login .title {
   text-align: center;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .login .form {
@@ -27,4 +28,85 @@
 
 .login .fill-button {
   width: 100%;
+}
+.illustration2 {
+  width: 100% !important;
+  position: sticky;
+  margin-bottom: rem;
+  margin-top: 0.4rem;
+  margin-right: 0rem;
+  margin-left: 4rem;
+}
+.login1 {
+  position: sticky;
+  background-color: rgba(20, 12, 91, 0.976);
+  margin: 0rem;
+  margin-left: 0rem;
+}
+.login1 .form {
+  margin-right: -2rem;
+  margin-left: 2rem;
+  max-width: 25rem;
+  flex-direction: column;
+}
+.login1 .logo {
+  margin-top: 2rem;
+  margin-left: 4rem;
+  justify-content: center;
+}
+
+.login1 .marca2 {
+  font-size: 30px;
+  --text-color: rgb(39, 183, 249);
+  margin-top: 0.5rem;
+  margin-left: 5rem;
+  text-align: center;
+}
+.login1 .title {
+  text-align: center;
+  margin-left: 4rem;
+}
+.login1 .message1 {
+  margin-left: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.login1 .espacio1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.login1 .espacio2 {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.login1 .boton1 {
+  border-color: rgb(253, 253, 253);
+  color: rgb(253, 253, 253);
+  margin-top: 1rem;
+  text-align: center;
+  margin-left: 5px;
+}
+.login1 .message2 {
+  margin-left: 5rem;
+  margin-top: 0.5rem;
+  --text-color: rgb(39, 183, 249);
+}
+.login1 .message3 {
+  --text-color: rgb(255, 255, 255);
+}
+.login1 .br2 {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.br2:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.login1 .bbr2 {
+  margin-top: -1.8rem;
+  margin-left: 8rem;
+}
+.bbr2:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }

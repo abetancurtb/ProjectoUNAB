@@ -1,51 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap");
 
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
 body * {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 16px;
-    text-decoration: none;
+  color: var(--text-color);
 
-    color: var(--text-color);
+  margin: 0;
+  padding: 0;
 
-    margin: 0;
-    padding: 0;
+  outline-color: var(--enf-color);
 
-    outline-color: var(--main-color);
-
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-    --text-color: rgb(86, 86, 86);
-    --main-color: #4533b4;
-    --enf-color: #c85555;
-    --default-radius: 0.3rem;
-    --default-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-}
-
-h1 {
-    font-size: 32px;
-    color: var(--main-color);
+  --text-color: rgb(255, 255, 255);
+  --main-color: #391fff;
+  --enf-color: #400080;
+  --default-radius: 0.3rem;
+  --default-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
-    font-size: 28px;
-    color: var(--main-color);
+  font-size: 20px;
+  --text-color: rgb(0, 0, 0);
 }
-
+p {
+  font-size: 15px;
+  --text-color: rgb(0, 0, 0);
+  font-weight: bold;
+}
 b {
-    font-size: inherit;
+  font-size: 800px;
+  --text-color: rgb(39, 183, 249);
+  font-size: inherit;
 }
 
-b,
 a {
-    color: var(--main-color);
+  font-size: 20px;
+  --text-color: rgb(255, 255, 255);
+  margin-bottom: 0.5rem;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }

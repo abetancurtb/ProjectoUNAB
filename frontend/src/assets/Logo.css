@@ -1,4 +1,9 @@
 .logo {
-    align-items: center;
-    gap: 0.5rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
