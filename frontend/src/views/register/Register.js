@@ -59,16 +59,7 @@ function Login() {
           </form>
           <div class="registercard">
             ¿Ya tienes cuenta? <Link to="/login">Inicia Sesión</Link>
-            <Link to="//www.facebook.com/zapatillasscorpion154">
-              <div class="br1">
-                <img src="https://res.cloudinary.com/db8koqsxz/image/upload/v1671684802/facebook_guom54.png"></img>
-              </div>
-            </Link>
-            <Link to="//www.instagram.com/zapatillasscorpion154/">
-              <div class="bbr1" align="center">
-                <img src="https://res.cloudinary.com/db8koqsxz/image/upload/v1671799517/instagram_caimst.png"></img>
-              </div>
-            </Link>
+           
           </div>
         </div>
 

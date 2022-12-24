@@ -82,16 +82,7 @@ function Login() {
               </div>
             </div>
           </div>
-          <Link to="//www.facebook.com/zapatillasscorpion154">
-            <div class="br2" align="center">
-              <img src="https://res.cloudinary.com/db8koqsxz/image/upload/v1671684802/facebook_guom54.png"></img>
-            </div>
-          </Link>
-          <Link to="//www.instagram.com/zapatillasscorpion154/">
-            <div class="bbr2" align="center">
-              <img src="https://res.cloudinary.com/db8koqsxz/image/upload/v1671799517/instagram_caimst.png"></img>
-            </div>
-          </Link>
+          
         </div>
         <GridColumn className="illustration2">
           <img height="640" width="910" src={illustration}></img>
