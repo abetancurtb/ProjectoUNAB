@@ -3,7 +3,6 @@ import noteModel from  "../models/note.js"
 
 export async function createNote(req, res){
     const note = req.body;
-
     let documento
 
     try {

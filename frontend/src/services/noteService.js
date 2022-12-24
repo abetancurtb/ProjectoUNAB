@@ -1,5 +1,5 @@
 export async function getNotas(token) {
-    const res = await fetch("http://localhost:8080/api/notes/", {
+    const res = await fetch("http://localhost:8080/api/note/", {
         headers: {
           token: token,
         },
@@ -8,12 +8,15 @@ export async function getNotas(token) {
       return documents;
 }
 
-export async function registerNotas(user, categoria,periodicidad, estado) {
+export async function registerNotas(idUsuario, descripcion, categoria) {
   const data = {
-      user: user,
-      categoria : categoria,
-      periodicidad: periodicidad,
-      estado: estado
+      idUsuario: idUsuario,
+      categoria: categoria,
+      descripcion: descripcion
+      
+      //categoria : categoria,
+      //periodicidad: periodicidad,
+      //estado: estado
     
   };
 
