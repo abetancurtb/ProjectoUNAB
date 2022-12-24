@@ -19,12 +19,16 @@ export async function createNote(req, res){
 }
 
 export async function readNote(req, res){
-    const { idUsuario } = req.body
+    const { jj } = req.body
 
     let documento
 
     try {
+
+        const { idUsuario } = req.value;
+
         documento = await noteModel.findOne({ idUsuario })
+        res.status(200).json(documents);
     } catch (error) {
         res.status(400)
         res.json(error.message)
@@ -34,6 +38,7 @@ export async function readNote(req, res){
     res.status(200)
     res.json(documento)
 }
+
 
 export async function updateNote(req, res){
     const { idUsuario } = req.params

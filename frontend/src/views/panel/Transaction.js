@@ -6,6 +6,7 @@ import "./UserPanel.css";
 
 function Transaction(props) {
   const { user } = useContext(UserContext);
+  console.log(user)
   const [cookies, setCookies] = useCookies(["userName"]);
 
   let currentUser;

@@ -3,10 +3,10 @@ import jwt from "jsonwebtoken";
 
 dotenv.config();
 
-const privateKey = process.env.PRIVATE_KEY;
+const privateKey = "1234567890abcdefghijklmnopqrstuwxyz";
 
 export function genToken(element) {
-  const token = jwt.sign(element, "1234567890abcdefghijklmnopqrstuwxyz");
+  const token = jwt.sign(element, privateKey);
   // @ts-ignore
   return token;
 }
